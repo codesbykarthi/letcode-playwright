@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.622300000000001">
+<testsuite name="Letcode.spec.js" timestamp="2025-04-03T12:44:18.669Z" hostname="chrome" tests="1" failures="0" skipped="0" time="9.895" errors="0">
+<testcase name="Test Drag and drop element to element" classname="Letcode.spec.js" time="9.895">
+<system-out>
+<![CDATA[Drag and Drop Successful
+
+[[ATTACHMENT|test-results\Letcode-Test-Drag-and-drop-element-to-element-chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Letcode-Test-Drag-and-drop-element-to-element-chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

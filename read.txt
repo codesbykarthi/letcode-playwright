@@ -1,0 +1,16 @@
+package.json 
+    name: "playwright" → The name of your project.
+    version: "1.0.0" → The current version of your project.
+    description: "" → A short description of your project (empty for now).
+    main: "index.js" → The entry point file (not required for Playwright, usually used in Node.js apps).
+    keywords: [] → Keywords for npm search (empty for now).
+    author: "" → Author details (empty for now).
+    license: "ISC" → License type (default for npm projects, can be changed).
+    scripts: → used to define custom npm commands.
+        "scripts": {
+          "test": "npx playwright test",
+          "install-playwright": "npx playwright install"
+        }  
+    Running npm test will execute Playwright tests.
+
+    

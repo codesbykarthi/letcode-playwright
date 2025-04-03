@@ -1,0 +1,19 @@
+{
+  "name": "letcode-playwright",
+  "version": "1.0.0",
+  "description": "Letcode is a opensource workspace to practice automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test && npx playwright show-report",
+    "install-playwright": "npx playwright install"
+  },
+  "keywords": [],
+  "author": "Karthi Balakrishnan",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.0",
+    "eslint": "^9.23.0",
+    "typescript": "^5.8.2"
+  }
+}
