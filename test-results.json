@@ -76,7 +76,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Test Drag and drop element to element",
+          "title": "Test Sortable ToDo List",
           "ok": true,
           "tags": [],
           "tests": [
@@ -91,26 +91,22 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 9895,
+                  "duration": 19388,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Drag and Drop Successful\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T12:44:19.851Z",
+                  "startTime": "2025-04-04T07:19:37.212Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\letcode-playwright\\test-results\\Letcode-Test-Drag-and-drop-element-to-element-chrome\\test-finished-1.png"
+                      "path": "C:\\letcode-playwright\\test-results\\Letcode-Test-Sortable-ToDo-List-chrome\\test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\letcode-playwright\\test-results\\Letcode-Test-Drag-and-drop-element-to-element-chrome\\trace.zip"
+                      "path": "C:\\letcode-playwright\\test-results\\Letcode-Test-Sortable-ToDo-List-chrome\\trace.zip"
                     }
                   ]
                 }
@@ -118,9 +114,9 @@
               "status": "expected"
             }
           ],
-          "id": "c1d546a5f0ad7816652d-e72c1039a95ebfeba245",
+          "id": "c1d546a5f0ad7816652d-0e2166b9ef3fa305b20f",
           "file": "Letcode.spec.js",
-          "line": 96,
+          "line": 103,
           "column": 1
         }
       ]
@@ -128,8 +124,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-03T12:44:18.455Z",
-    "duration": 12622.300000000001,
+    "startTime": "2025-04-04T07:19:35.487Z",
+    "duration": 22640.884000000002,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

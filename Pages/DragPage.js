@@ -24,7 +24,7 @@ class DragPage {
             const centerOfDragBoxY = dragBox.y + dragBox.height / 2;
             await this.page.mouse.move(centerOfDragBoxX, centerOfDragBoxY);
             await this.page.mouse.down();
-            await setWait(3);
+            await this.page.waitForTimeout(2000);
             // move to bottom right of boundary
             await this.page.mouse.move(bottomRightX, bottomRightY);
             await this.page.mouse.up();

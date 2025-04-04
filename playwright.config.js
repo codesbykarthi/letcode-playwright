@@ -1,24 +1,36 @@
 const { defineConfig } = require('@playwright/test');
+const letcodeBaseUrl = 'https://letcode.in/';
 
 export default defineConfig({
+  letcodeBaseUrl,
+  letcodeURL_Workspace:`${letcodeBaseUrl}test`,
+  letcodeURL_Input:`${letcodeBaseUrl}edit`,
+  letcodeURL_Button:`${letcodeBaseUrl}button`,
+  letcodeURL_Dropdowns:`${letcodeBaseUrl}dropdowns`,
+  letcodeURL_Alert:`${letcodeBaseUrl}alert`,
+  letcodeURL_Iframe:`${letcodeBaseUrl}frame`,
+  letcodeURL_Radio:`${letcodeBaseUrl}radio`,
+  letcodeURL_Window:`${letcodeBaseUrl}window`,
+  letcodeURL_Element:`${letcodeBaseUrl}elements`,
+  letcodeURL_Drag:`${letcodeBaseUrl}draggable`,
+  letcodeURL_Drop:`${letcodeBaseUrl}droppable`,
+  letcodeURL_Sort:`${letcodeBaseUrl}sortable`,
+  letcodeURL_MultiSelect:`${letcodeBaseUrl}selectable`,
+  letcodeURL_Slider:`${letcodeBaseUrl}slider`,
+  letcodeURL_Wait:`${letcodeBaseUrl}waits`,
+  letcodeURL_table:`${letcodeBaseUrl}table`,
+  letcodeURL_AdvancedTable:`${letcodeBaseUrl}advancedtable`,
+  letcodeURL_Calendar:`${letcodeBaseUrl}calendar`,
+  letcodeURL_Form:`${letcodeBaseUrl}forms`,
+  letcodeURL_File:`${letcodeBaseUrl}file`,
+  letcodeURL_Shadpw:`${letcodeBaseUrl}shadow`,
+
   testDir: './tests',
   testMatch: 'Letcode.spec.js',
-  letcodeURL_Home:'https://letcode.in/',
-  letcodeURL_Workspace:'https://letcode.in/test',
-  letcodeURL_Input:'https://letcode.in/edit',
-  letcodeURL_Button:'https://letcode.in/button',
-  letcodeURL_Dropdowns:'https://letcode.in/dropdowns',
-  letcodeURL_Alert:'https://letcode.in/alert',
-  letcodeURL_Iframe:'https://letcode.in/frame',
-  letcodeURL_Radio:'https://letcode.in/radio',
-  letcodeURL_Window:'https://letcode.in/window',
-  letcodeURL_Element:'https://letcode.in/elements',
-  letcodeURL_Drag:'https://letcode.in/draggable',
-  letcodeURL_Drop:'https://letcode.in/droppable',
   retries: 0,
-  outputDir: './test-results', // Custom output directory
+  outputDir: './test-results',                        // Custom output directory
   reporter: [
-    ['list'],                     // Default console output
+    ['list'],                                         // Default console output
     ['html', { outputFolder: 'playwright-report' }],  // HTML report
     ['json', { outputFile: 'test-results.json' }],    // JSON report
     ['junit', { outputFile: 'results.xml' }]          // JUnit XML report
@@ -26,9 +38,9 @@ export default defineConfig({
   use: {
     browserName: 'chromium',
     headless: false,
-    viewport: null, // Ensures Playwright does not override the browser’s default size
+    viewport: null, 
     launchOptions: {
-      args: ['--start-maximized'], // Maximizes the browser window
+      args: ['--start-maximized'], 
     },
     screenshot: 'on',
     trace: 'on',

@@ -1,5 +1,5 @@
 const { expect } = require('@playwright/test');
-const { getCSSValue } = require('../Utilities');
+const { getCSSValue } = require('../Utilities').default;
 import defineConfig from '../playwright.config'
 
 class ButtonfieldsPage {

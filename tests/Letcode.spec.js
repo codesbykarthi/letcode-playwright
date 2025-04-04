@@ -9,6 +9,7 @@ const { DropdownFieldPage } = require('../Pages/DropdownFieldPage').default;
 const { InputFieldPage } = require('../Pages/InputFieldPage').default;
 const { ButtonfieldPage } = require('../Pages/ButtonFieldPage').default;
 const { iFramePage } = require('../Pages/iFramePage').default;
+const { SortPage } = require('../Pages/SortPage').default;
 
 /*test('Test input fields', async ({ page }) => {
   const inputFieldPage = new InputFieldPage(page);
@@ -91,10 +92,17 @@ test('Test Draggable Box', async ({ page }) => {
   const dragPage = new DragPage(page);
   await dragPage.navigateToDragPage();
   await dragPage.dragBoxToBottomLeft();
-});*/
+});
 
 test('Test Drag and drop element to element', async ({ page }) => {
   const dropPage = new DropPage(page);
   await dropPage.navigateToDropPage();
   await dropPage.dragAndDropIntoElement();
+});*/
+
+test('Test Sortable ToDo List', async ({ page }) => {
+  const sortPage = new SortPage(page);
+  await sortPage.navigateToSortPage();
+  await sortPage.dragItemstoCompletedList();
+  await sortPage.dragAllFromCompletedToTODOList();
 });
