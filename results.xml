@@ -1,11 +1,24 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="22.640884000000003">
-<testsuite name="Letcode.spec.js" timestamp="2025-04-04T07:19:35.738Z" hostname="chrome" tests="1" failures="0" skipped="0" time="19.388" errors="0">
-<testcase name="Test Sortable ToDo List" classname="Letcode.spec.js" time="19.388">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.648853">
+<testsuite name="Letcode.spec.js" timestamp="2025-04-08T06:50:07.448Z" hostname="chrome" tests="1" failures="0" skipped="0" time="9.676" errors="0">
+<testcase name="Test Simple tables" classname="Letcode.spec.js" time="9.676">
 <system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\Letcode-Test-Sortable-ToDo-List-chrome\test-finished-1.png]]
+<![CDATA[[
+  {
+    firstName: [32m'Koushik'[39m,
+    lastName: [32m'Chatterjee'[39m,
+    email: [32m'koushik@letcode.in'[39m
+  },
+  {
+    firstName: [32m'Yashwanth'[39m,
+    lastName: [32m'Raj'[39m,
+    email: [32m'yashwanth@letcode.in'[39m
+  },
+  { firstName: [32m'Iron'[39m, lastName: [32m'Man'[39m, email: [32m'man@letcode.in'[39m }
+]
 
-[[ATTACHMENT|test-results\Letcode-Test-Sortable-ToDo-List-chrome\trace.zip]]
+[[ATTACHMENT|test-results\Letcode-Test-Simple-tables-chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\Letcode-Test-Simple-tables-chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -10,6 +10,15 @@ const { InputFieldPage } = require('../Pages/InputFieldPage').default;
 const { ButtonfieldPage } = require('../Pages/ButtonFieldPage').default;
 const { iFramePage } = require('../Pages/iFramePage').default;
 const { SortPage } = require('../Pages/SortPage').default;
+const { AdvancedTable } = require('../Pages/AdvancedTablePage').default;
+const { Calendar } = require('../Pages/CalendarPage').default;
+const { Files } = require('../Pages/FilePage').default;
+const { Forms } = require('../Pages/FormPage').default;
+const { Multiselect } = require('../Pages/MultiSelectPage').default;
+const { Shadow } = require('../Pages/ShadowPage').default;
+const { Slider } = require('../Pages/SliderPage').default;
+const { Table } = require('../Pages/TablePage').default;
+const { WaitPage } = require('../Pages/WaitPage').default;
 
 /*test('Test input fields', async ({ page }) => {
   const inputFieldPage = new InputFieldPage(page);
@@ -98,7 +107,7 @@ test('Test Drag and drop element to element', async ({ page }) => {
   const dropPage = new DropPage(page);
   await dropPage.navigateToDropPage();
   await dropPage.dragAndDropIntoElement();
-});*/
+});
 
 test('Test Sortable ToDo List', async ({ page }) => {
   const sortPage = new SortPage(page);
@@ -106,3 +115,32 @@ test('Test Sortable ToDo List', async ({ page }) => {
   await sortPage.dragItemstoCompletedList();
   await sortPage.dragAllFromCompletedToTODOList();
 });
+
+test('Test Multi Select', async ({ page }) => {
+  const multiselect = new Multiselect(page);
+  await multiselect.navigateToMultiSelectPage();
+  await multiselect.selectThreeValuesandGetCount();
+});
+
+test('Test Slider', async ({ page }) => {
+  const slider = new Slider(page);
+  await slider.navigateToSliderPage();
+  await slider.slideToAndValidate(35);
+  await slider.slideToAndValidate(1);
+  await slider.slideToAndValidate(50);
+});
+
+test('Test Waits ', async ({ page }) => {
+  const waitPage = new WaitPage(page);
+  await waitPage.navigateToWaitPage();
+  await waitPage.clickButtonAndWaitForAlertToAppearAndAccept();
+});*/
+
+test('Test Simple tables', async ({ page }) => {
+  const tablePage = new Table(page);
+  await tablePage.navigateToTablesPage();
+  //await tablePage.addAllValuesFromPriceColumnTableOne();
+  //await tablePage.addAttendanceTableTwo();
+  await tablePage.sortByEachColumsTableThree();
+});
+
